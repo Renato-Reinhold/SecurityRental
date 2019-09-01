@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navBar">
+        <img src="C:\Users\Aluno\Desktop\logo.png"/>
+        <ul>
+            <li>
+                <a>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    Hire Service
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    About Us
+                </a>
+            </li>
+
+
+            <li>
+                <a>
+                    Announce Service
+                </a>
+            </li>
+
+
+            <li>
+                <a>
+                    Login
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="searchDiv" class="col-md-10">
+        <div id="leftSideSearchDiv" class="col-md-4">
+
+            <label>Type of Service</label>
+            <select name="typeOfService">
+                <option value="personalSecurity">Segurança Pessoal</option>
+                <option value="armoredCar">Transfer With Armored Car</option>
+                <option value="homeSurveillance">home surveillance</option>
+            </select>
+            <br />
+
+            <label>City</label>
+            <input type="text" />
+            <br />
+
+            <label>Date</label>
+            <input type="text" />
+
+        </div>
+
+        <div id="rigthSideSearchDiv" class="col-md-5">
+            <div id="resultDiv">
+                <div class="row">
+                  <!--  <img class="col-md-2" src="C:\Users\Aluno\Desktop\download.png"/>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $('select').selectpicker();
+</script>
+</html>
